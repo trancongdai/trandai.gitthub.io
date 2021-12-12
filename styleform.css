@@ -1,0 +1,87 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    width: 80%;
+    margin: auto;
+}
+.row{
+    width: 90%;
+    margin: auto;
+    height: 50px;
+
+}
+.row .left{
+    float: left;
+    width: 20%;
+    height: auto;
+}
+.row .right{
+    float: left;
+    width: 80%;
+    height: auto;
+}
+.left label{
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+    font-size: 1.2rem;
+}
+.right input[type = text], [type = date] {
+    width: 70%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+input[type = submit]{
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 20%;
+}
+span{
+    padding-left: 10px;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+    /* display: none; */
+    margin-top: 30px;
+    
+}
+tr, th, td {
+    border: 1px solid rgb(92, 89, 89);
+    text-align: center;
+    padding: 10px;
+}
+tr:nth-child(even){
+    background-color: rgb(224, 222, 217);
+}
+.priceBDS{
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+    font-size: 1.2rem;
+    margin-left: 57px;
+}
+#result{
+    width: 30%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-left: 120px;
+    margin-bottom: 10px;
+    color: rgb(133, 13, 13);
+}
+h1{
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 30px;
+    color: rgb(134, 16, 16);
+    text-shadow: 2px 2px 2px #000000;
+}

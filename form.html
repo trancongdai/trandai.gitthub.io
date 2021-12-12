@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tính số tiền vay</title>
+    <link rel="stylesheet" href="./styleform.css">
+</head>
+<body>
+
+    <div class="container">
+      <h1>Bảng Tính Bất Động Sản </h1>
+      <label for="" class="priceBDS">Giá BDS</label>
+      <input type="text" id="result"><br>
+        <!-- <label for="">Nhập Tiền Lương</label>
+        <input value=""  type="text" id="luong">
+        <button onclick="tinh()">Tính</button>
+        <h1>Giá tiền cầm mua : <span id  = "result2" style="color: red;"></span></h1> -->
+      <!-- Nhập liệu và tính toán -->
+      <form action="">
+        <!-- Số tiền vay -->
+        <div class="row">
+          <div class="left">
+            <label for="" > Số tiền vay</label>
+          </div>
+          <div class="right">
+            <input type="text" name=""  onkeypress="return CheckNumeric()" onkeyup="FormatCurrency(this)"   id="money" placeholder="Số tiền vay..."> <span>VND</span>
+          </div>
+        </div>
+        <!-- Thời gian vay -->
+        <div class="row">
+          <div class="left">
+            <label for="" > Thời gian vay</label>
+          </div>
+          <div class="right">
+            <input type="text" name="" id="time" placeholder="Thời gian vay..."> <span>tháng</span>
+          </div>
+        </div>
+        <!-- Lãi suất -->
+        <div class="row">
+          <div class="left">
+            <label for="" > Lãi suất</label>
+          </div>
+          <div class="right">
+            <input value="8" type="text" name="" id="lai" placeholder="Lãi suất..."> <span>%năm</span>
+
+          </div>
+        </div>
+         <!-- Ngày giải ngân  -->
+        <!-- <div class="row">
+          <div class="left">
+            <label for="" > Ngày giải ngân</label>
+          </div>
+          <div class="right">
+            <input type="date" name="" id="giaingan" placeholder="mm/dd/yyyy"> 
+          </div>
+        </div>  -->
+      </form>
+      
+      <div class="row">
+        <input type="submit" value="Tính" id="tinh" onclick="final()">
+       </div> 
+        <!-- bảng kết quả  -->
+        <table>
+          <thead>
+            <tr>
+              <th colspan="2" >Kỳ trả nợ</th>
+              <th >Số gốc còn lại</th>
+              <th >Gốc</th>
+              <th>Lãi</th>
+              <th>Tổng gốc + Lãi</th>
+            </tr>
+          </thead>
+
+          <tbody id="body">
+            <tr>
+              <!-- hiển thị kết quả -->
+          </tr> 
+          </tbody>
+          
+
+
+        </table>
+        
+      </div>
+
+    <script src="./main2.js"></script>
+
+</body>
+</html>

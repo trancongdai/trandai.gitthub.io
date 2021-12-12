@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="style2.css">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <!-- Latest compiled and minified JavaScript -->
+    
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> 
+</head>
+<body>
+ 
+ <div class="container">
+
+      <h1>BẤT ĐỘNG SẢN</h1>
+      <header>
+      <div>
+        <i class="fas fa-dollar-sign"></i>
+        <label for="" class="price">Tiền Vốn : </label>
+        <input type="text" id="tien_von" placeholder="Nhập tiền vốn của bạn ..." ><br>
+        <i class="fas fa-dollar-sign"></i>
+        <label for="" class="price">Tiền Lương : </label>
+        <input type="text" id="tien_luong" placeholder="Nhập tiền lương của bạn ..." >
+        <button onclick="tienVon()" id="luu"><i class="fas fa-save"></i></button>
+        <div class="input-group">
+          <input class="input" type="text" name="name" placeholder="Nhập từ khoá để tìm kiếm......">
+         
+            <button 
+            class="btn"
+            id="index"  
+            type="button" class="btn btn-default"><i class="fas fa-search"></i></button>
+        </div>
+     
+        <div>
+          
+          <select class="quan" name="" id="list" onchange="getSelectValue()">
+            <option  value="Quận 1">Quận 1</option>
+            <option  value="Quận 2">Quận 2</option>
+            <option  value="Quận 3">Quận 3</option>
+            <option  value="Quận 4">Quận 4</option>
+            <option  value="Quận 5">Quận 5</option>
+            <option value="Thủ Đức">Thủ Đức</option>
+            <option value="Tân Bình">Tân Bình</option>
+            <option value="Quận 12">Quận 12</option>
+            <option value="Quận 10">Quận 10</option>
+          </select>
+        </div>
+        <div class="list1">
+          <span class="mucgia">Mức giá : </span>
+          <span>Từ</span>
+          <select name="" id="list1" >
+            <option  value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+          </select>
+         <span>Đến</span>
+          <select name="" id="list2" >
+            <option  value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="15">15</option>
+            <option value="20">20</option>
+          </select>
+         
+          <button class="btn2" onclick="locPrice()"><i class="fas fa-search-dollar"></i></button>
+        </div>
+        <div class="list2">
+          <span class="mucgia">Diện tích : </span>
+          <span>Từ : </span>
+          <select name="" id="dt1" >
+            <option  value="10">10 </option>
+            <option value="20">20 </option>
+            <option value="30">30</option>
+            <option value="40">40</option>
+            <option value="50">50</option>
+            <option value="70">70</option>
+            <option value="80">80</option>
+            <option value="90">90</option>
+            <option value="100">100</option>
+ 
+          </select>
+          <span>Đến : </span>
+          <select name="" id="dt2" >
+            <option  value="10">10</option>
+            <option value="30">30</option>
+            <option value="50">50</option>
+            <option value="70">70</option>
+            <option value="100">100</option>
+            <option value="120">120</option>
+            <option value="150">150</option>
+            <option value="200">200</option>
+         
+          </select>
+         
+          <button class="btn2" onclick="locArea()"><i class="fas fa-dollar-sign"></i></button>
+          <i class="fas fa-phone"></i>
+          <input type="text" id="sdt" value="0906636932">
+        </div>
+        
+      
+    </div>
+  </header>
+    
+     <table  id="table" class="table table-bordered table-hover">
+       <thead>
+         <tr>
+           <th>STT</th>
+           <th>LINK</th>
+           <th>ADDRESS</th>
+           <th>AREA</th>
+           <th>PRICE</th>
+           <th>TITLE</th>
+           <th></th>
+           <th></th>
+         </tr>
+       </thead>
+       <tbody id="table2">
+        
+       </tbody>
+     </table>
+     
+       
+     </div>
+
+     
+ </div>
+
+
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="/main.js"></script>
+    
+</body>
+</html>
